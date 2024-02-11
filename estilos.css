@@ -1,0 +1,213 @@
+/* Estilos generales y para celulares */
+body {
+  font-family: "Raleway", sans-serif;
+}
+.nav-bar {
+  background: rgb(39, 39, 39);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.hamburguer {
+  padding: 0.5em 0.5em 0.5em 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.items-enlace {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5em;
+  padding: 0.5rem 0;
+}
+
+.items-enlace a {
+  color: rgb(240, 240, 240);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+.ini img {
+  display: none;
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icono {
+  background-color: none;
+  cursor: pointer;
+  color: rgb(240, 240, 240);
+}
+
+.desplegar {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: left 0.2s ease;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.6);
+}
+.barra {
+  background: rgb(10, 10, 10);
+  width: 60%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.cerrar {
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+  position: absolute;
+  left: 61%;
+  top: 0.4em;
+  background-color: rgb(39, 39, 39);
+}
+
+.subtitle {
+  color: rgb(240, 240, 240);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.9rem;
+  font-weight: 800;
+}
+.subtitle a {
+  margin-bottom: 1.6rem;
+  text-decoration: none;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: rgb(240, 240, 240);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.aparecer {
+  left: 0;
+}
+
+.subtitle a:hover {
+  background-color: rgb(90, 90, 90);
+  color: #ffa500;
+}
+
+.contenedor {
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.principal {
+  padding-top: 2em;
+  overflow-x: hidden;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.parrafos {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Pie de pagina*/
+.pie {
+  background: rgb(10, 10, 10);
+  color: rgb(250, 250, 250);
+}
+
+.content {
+  padding-top: 0.1rem;
+  padding-bottom: 1rem;
+}
+.navegacion2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.navegacion2 a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.h4 {
+  text-align: center;
+}
+h2 {
+  line-height: 1.15;
+}
+
+.copiar {
+  text-align: center;
+}
+
+/* media querys para tablets y celulares grandes*/
+@media (min-width: 500px) {
+  .ini img {
+    display: block;
+  }
+  .items-enlace a {
+    margin-left: 2rem;
+  }
+  .navegacion2 {
+    font-size: 1.8rem;
+  }
+  .navegacion2 a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .contenedor {
+    padding-right: calc(2rem * 2);
+    padding-left: calc(2rem * 1);
+  }
+}
+
+@media (min-width: 800px) {
+  .contenedor {
+    padding-right: calc(4rem * 3);
+    padding-left: calc(3rem * 2);
+  }
+}
+
+@media (min-width: 1150px) {
+  .contenedor {
+    padding-right: calc(5rem * 4);
+  }
+}
+/* media querys para computadoras */
+@media (min-width: 900px) {
+  .icono {
+    display: none;
+  }
+
+  .items-enlace a {
+    margin-right: 5rem;
+  }
+
+  .items-enlace a:hover {
+    color: #ffa500;
+  }
+
+  .desplegar {
+    display: none;
+  }
+}
