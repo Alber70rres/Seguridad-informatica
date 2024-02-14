@@ -33,6 +33,7 @@ a {
   font-weight: 600;
   font-size: 1rem;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .ini img {
@@ -115,6 +116,7 @@ a {
 .principal {
   padding-top: 2em;
   overflow-x: hidden;
+  background: rgb(247, 247, 247);
 }
 
 .parrafos {
@@ -212,7 +214,7 @@ hr {
     margin-right: 5rem;
   }
 
-  .items-enlace a:hover {
+  .items-enlace a:hover{
     color: #ffa500;
   }
 
