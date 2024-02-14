@@ -117,48 +117,61 @@ a {
   overflow-x: hidden;
 }
 
-.titulo {
-  text-align: center;
-  font-size: 0.8rem;
-  margin-bottom: 2rem;
-}
-
 .parrafos {
   font-size: 1.1rem;
   line-height: 1.5;
 }
 
 /* Pie de pagina*/
-.pie {
+.pie-pagina {
   background: rgb(10, 10, 10);
   color: rgb(250, 250, 250);
-}
-
-.content {
-  padding-top: 0.1rem;
-  padding-bottom: 1rem;
-}
-.navegacion2 {
+  padding: 0.2rem 1rem 1.2rem 1rem;
   display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-.navegacion2 a {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-.h4 {
-  text-align: center;
-}
-h2 {
-  line-height: 1.15;
-}
-
-.copiar {
-  text-align: center;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.articulos-interes a {
+  display: block;
+}
+
+.articulos-redes a {
+  display: block;
+}
+hr {
+  background: rgb(240, 240, 240);
+  width: 100%;
+}
+
+.section a {
+  color: #ffa500;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.derechos {
+  padding-top: 10px;
+}
+
+/*COLORES DE LOS ENLACES, NAVEGACIÓN IZQUIERDA*/
+.page1 {
+  color: #ffa500 !important;
+  background-color: rgb(39, 39, 39);
+}
+
+#subtitle a.active {
+  color: #ffa500 !important; /* Cambia esto según tus preferencias de estilo */
+  background-color: rgb(39, 39, 39);
+  /* Agrega otros estilos que desees aplicar a los enlaces activos */
+}
 /* media querys para tablets y celulares grandes*/
 @media (min-width: 500px) {
   .ini img {
@@ -166,13 +179,6 @@ h2 {
   }
   .items-enlace a {
     margin-left: 2rem;
-  }
-  .navegacion2 {
-    font-size: 1.8rem;
-  }
-  .navegacion2 a {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .contenedor {
@@ -186,12 +192,15 @@ h2 {
     padding-right: calc(4rem * 3);
     padding-left: calc(3rem * 2);
   }
+  /*PIE PAGINA*/
 }
 
 @media (min-width: 1150px) {
   .contenedor {
     padding-right: calc(5rem * 4);
   }
+
+  /*PIE PAGINA*/
 }
 /* media querys para computadoras */
 @media (min-width: 900px) {
@@ -209,5 +218,8 @@ h2 {
 
   .desplegar {
     display: none;
+  }
+  .section a {
+    font-size: 1.3rem;
   }
 }
